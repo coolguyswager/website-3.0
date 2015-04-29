@@ -1,0 +1,55 @@
+/*
+    Document   : About me folder/aboutme.css
+    Created on : 2015-04-27 06:15 PM
+    Author     : chiefcoffeetable
+    Description:
+    Purpose of the stylesheet follows.
+    To change this template use Tools | Templates.
+*/
+
+root {
+    display: block;
+}
+#box1{
+    text-align:center;
+    margin:0 auto;
+    width:450px;
+    border: 10px white solid;
+    -webkit-border-radius: 10px;
+}
+#blueThing{
+    margin:0 auto;
+    width:490px;
+    padding: 10px;
+    border: 5px  solid;
+    -webkit-border-radius: 30px;
+}
+#lol{
+    background-color:#4C8EAB;
+    margin:0 auto;
+    width:250px;
+    padding: 10px;
+    border: 5px  solid;
+    -webkit-border-radius: 30px;
+}
+#mazeRunner{
+    background-color:#4C8EAB;
+    margin:0 auto;
+    width:250px;
+    padding: 10px;
+    border: 5px  solid;
+    -webkit-border-radius: 30px;
+}
+#movieTv{
+    background-color:#4C8EAB;
+    margin:0 auto;
+    width:250px;
+    padding: 10px;
+    border: 5px  solid;
+    -webkit-border-radius: 30px;
+}
+
+
+
+
+

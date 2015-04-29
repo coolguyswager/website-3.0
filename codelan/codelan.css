@@ -1,0 +1,111 @@
+
+#box1{
+    position:relative;
+    text-align:center;
+    margin:0 auto;
+    width:450px;
+    border: 10px white solid;
+    -webkit-border-radius: 10px;
+}
+#blueThing{
+    margin:0 auto;
+    width:490px;
+    padding: 10px;
+    border: 5px  solid;
+    -webkit-border-radius: 30px;
+}
+
+div{
+    text-align:center;
+}
+
+#box2 {
+    width: 1000px;
+    margin: -200px;
+    background-color:blue;
+    position:relative;
+    margin-left:-600;
+    padding:10px;
+    border:solid black 2px;
+    
+}
+
+
+
+#box2 {
+    position: absolute;
+    left:500px; /*How far left the box starts*/
+    bottom: -250px; /*up and down*/
+    
+   
+    background: blue;
+    
+    -webkit-transition: 1s ease-in-out;
+    -moz-transition: 1s ease-in-out;
+    -o-transition: 1s ease-in-out;
+    transition: 1s ease-in-out;
+    text-align:center;
+  }
+  #bluething:hover + #box2 {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+    left: calc(100% - 50px);/*How far the box spins*/
+    background: green;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+  }
+  
+ 
+ #box3 {
+    position: absolute;
+    left: -700px; /*How far left the box starts*/
+    bottom: -190px; /*up and down*/
+    
+   
+    background: blue;
+    
+    -webkit-transition: 1s ease-in-out;
+    -moz-transition: 1s ease-in-out;
+    -o-transition: 1s ease-in-out;
+    transition: 1s ease-in-out;
+    text-align:center;
+  }
+  #bluething:hover ~ #box3 {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+    left: calc(100% - 1500px);/*How far the box spins*/
+    background: green;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+  }
+  
+  #box2 {
+    width: 500px;
+    margin: -200px;
+    background-color:blue;
+    position:relative;
+    margin-left:-600;
+    padding:10px;
+    
+}
+#box3{
+    margin:200px;
+    padding:10px;
+    width:380px;
+    border:solid black 2px;
+}
+ #ulOne{
+     text-align:left;
+      
+ }
+ #htmlnocss{
+     width:100%;
+    height:auto;

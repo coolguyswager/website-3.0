@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>JS Bin</title>
+  <link rel='stylesheet' href='mininggame.css'/>
+  <link rel='stylesheet' href='mininggame.js'/>
+  
+</head>
+<body>
+ <!-- PAGE 1 STARTS HERE -->
+ <div id="page1Visual" style="display:inline"> 
+  <button type="button"id="sellall">
+    Sell all</button>
+      
+  <p id = "moneyDisplay">Money:</p>
+  
+  <img src ="http://www.snowmobile-canada.com/BC-North-Face-Mountain-Climbing-Canada.jpg" id="rock">
+  
+  
+  
+  
+  
+  <div id = "iron">
+          <p id = "ironCount">Iron:</p>
+             <img       src="http://catalog.wlimg.com/1/1866979/full-images/iron-ore-lumps-1126368.jpg" id="ironimg">
+      </div>
+  
+
+  
+  <div id = gold>
+          <p id = "goldCount">Gold:</p>
+             <img       src="http://media.liveauctiongroup.net/i/13051/13390802_1.jpg?v=8CF4782B3292CF0" id="goldimg">
+      </div>    
+
+  
+  
+  <div id = diamond>
+          <p id = "diamondCount">Diamond:</p>
+             <img       src="http://www.clker.com/cliparts/E/u/s/L/K/5/clear-diamond-hi.png" id="diamondimg">
+      </div> 
+  
+  
+  
+   <div id = Ruby>
+          <p id = "rubyCount">Ruby:</p>
+             <img src="http://learn-rails.com/images/ruby.png "id="rubyimg">
+      </div>  
+   
+   <div id = Oil>
+          <p id = "oilCount">Oil:</p>
+             <img src="http://globe-views.com/dcim/dreams/oil/oil-03.jpg"id="oilimg">
+      </div>  
+  
+  
+  
+  
+  
+  <div id = "upgrade1" style="display:block;">
+    <p id="upgradeWords">Upgrade your pick <br>for 1000 coins</p>
+    <img       src="http://thumbs1.ebaystatic.com/d/l225/m/mvUuiVbQenqiSxOddw6x1oQ.jpg" id="upgradeimg">
+    
+  </div>
+  
+  <div id="lackOfMoney" style="display:none;">
+    <p>You dont have <br>enough resources.</p>
+  </div>
+  
+  <div id = "upgrade2" style="display:block;">
+    <p id="upgrade2Words">Buy a miner worker <br>for 1,500 coins</p>
+    <img       src="http://images.fineartamerica.com/images-medium-large/coal-miner-with-pickax-aloysius-patrimonio.jpg" id="upgrade2img">
+    
+  </div>
+  
+   
+   
+   <div id = "upgrade3" style="display:block;">
+    <p id="upgrade3Words">Buy an<br>oil drill</p>
+    <img       src="http://www.araluz.com/wp-content/uploads/2012/09/Oil-Pump-Jack1.jpg" id="upgrade3img">
+    
+  </div>
+   
+   
+  <div id = "page2button"  onclick="changeImage()">
+    
+    <img       src="http://www.flickeringmyth.com/wp-content/uploads/2014/10/TARDIS__pack_1__preview_by_allhopeislost.jpg" id="page2img">
+  
+  </div>
+   
+   <div id = "furnacehtml">
+    <img src="http://knsfinancial.com/wp-content/uploads/2011/09/Furnace-of-Suffering.jpg" height="100" width="100" id="furnaceimg">
+    <select id="furnacedropdown">  
+   <option value="selecter">Choose Your Ore to Smelt</option>    
+  <option value="iron">Iron</option>
+  <option value="copper">Copper</option>
+  <option value="nickel">Nickel</option>
+  <option value="gold">Gold</option>
+    </select>
+    <input id="furncountselect" onchange="smelt()"></input>
+  <button id = "smeltingbutton">Smelt It!</button>
+  </div>  
+  </div> 
+   
+   <!-- PAGE 2 STARTS HERE -->
+   
+  <div id ="page2visual" style='display:none'>
+    <p>
+      <pre>
+                                                                        Trading post
+                                                       
+                                                                  <span class="tradingPost">) )        /\</span>
+                                                                 <span class="tradingPost">=====      /  \</span>
+                                                                <span class="tradingPost">_|___|_____/ __ \____________</span>
+                                                               <span class="tradingPost">|::::::::::/ |  | \:::::::::::|</span>
+                                                               <span class="tradingPost">|:::::::::/  ====  \::::::::::|</span>
+                                                               <span class="tradingPost">|::::::::/__________\:::::::::|</span>                                    Rocket ship
+                                                               <span class="tradingPost">|_________|  ____  |__________|</span>                                         <span class="rocket">_</span>
+                                                                <span class="tradingPost">| ______ | / || \ | _______ |</span>                                         <span class="rocket">/ \</span>
+                                                                <span class="tradingPost">||  |   || ====== ||   |   ||</span>                                        <span class="rocket">/   \</span>
+                                                                <span class="tradingPost">||--+---|| |    | ||---+---||</span>                                       <span class="rocket">/     \</span>
+                                                                <span class="tradingPost">||__|___|| |   o| ||___|___||</span>                                      <span class="rocket">/       \</span>
+                                                                <span class="tradingPost">|========| |____| |=========|</span>                                     <span class="rocket">/_________\</span>
+                                                               <span class="tradingPost">(^^-^^^^^-|________|-^^^--^^^)</span>                                     <span class="rocket">|    __   |</span>
+                                                               <span class="tradingPost">(,, , ,, ,/________\,,,, ,, ,)</span>                                     <span class="rocket">|   |__|  |</span>
+                                                              <span class="tradingPost">','',,,,' /__________\,,,',',;;</span>                                     <span class="rocket">|    __   |</span>
+                                                                       /            \                                             <span class="rocket">|   |__|  |</span>
+                                                                      |              |                                            <span class="rocket">|    __   |</span>
+                                                                      |              |                                            <span class="rocket">|   |__|  |</span>
+                                                                      |              |                                            <span class="rocket">|    __   |</span>
+           <span class="theMines">     The mines    </span>                                        /                \                                          <span class="rocket">/|   |__|  |\</span>
+           <span class="theMines">     ________     </span>                                       |                  |                                        <span class="rocket">/ |    __   | \</span>
+           <span class="theMines">    / ______ \    </span>                                       |                  |                                       <span class="rocket">|  |   | o|  |  |</span>
+           <span class="theMines">   / /      \ \   </span>                                       |                  |                                       <span class="rocket">| /|_  |__| _|\ |</span>
+           <span class="theMines">   | |      | |   </span>                                       |                  |                                       <span class="rocket">|/  /       \  \|</span>
+           <span class="theMines">      / * *\      </span>                                       |                  |                                          <span class="rocket">(_________)</span>    
+           <span class="theMines">_____/ * * *\_____</span>______________________________________/                    \___________________________________________/     \_____
+                                                                                                                                       
+                                                                                                                                        
+           _______________________________________________________________________________________________________________________________________                                                                                                                          
+      </pre>
+    </p>
+    
+    
+  </div>
+      <!-- PAGE 2.5 STARTS HERE -->
+<div id ="pageTradeVisual" style='display:none'>
+  <p>
+  <pre>
+     _________________________________________________________________________________________________________________________________________________
+    |                                                        <p id = "moneyDisplayTrade">Money:</p>                                                                                         |
+    |           ____________            ____________                                                   ____________           <span class="betCSGO"> ____________</span>           |                                            
+    |          |            |          |            |                                                 |            |          <span class="betCSGO">|            |</span>          |
+    |          |  Buy some  |          |  Buy some  |              WELCOME TO SAMMY'S SWAG            |  Buy some  |          <span class="betCSGO">|   Bet on   |</span>          |
+    |          |    Pants   |          |    Smrts   |                                                 |   Effort   |          <span class="betCSGO">|    CSGO    |</span>          |
+    |          |____________|          |____________|               <span class="goBack">| Click to go back |</span>              |____________|          <span class="betCSGO">|____________|</span>          |                        
+    |                                                                                                                                                 |
+    |                                                                                                                                                 |
+    |_________________________________________________________________________________________________________________________________________________|
+    |                                                                                                                                                 |
+    |                                                                                                                                                 |
+    |                                                          (((((((((((((                                                                          |
+    |                                                         {|           |}                                                                         |
+    |                                                         {|  (>) (>)  |}                                                                         |
+    |                                                          |     <     |                                                                          |
+    |                                                          |           |                                                                          |
+    |                                                          |   \___/   |                                                                          |
+    |                                                          \___________/                                                                          |
+    |                                                          _____| |_____                                                                          |
+    |                                                         /             \                                                                         |
+    |                                                         |    -Swag    |                                                                         |
+    |                                                         |  |       |  |                                                                         |
+    |                                                         |  |       |  |                                                                         |
+    |                                                         |  |       |  |                                                                         |
+    |                                                         |__|       |__|                                                                         |
+    |____________________________________________________________|_______|____________________________________________________________________________|
+    |                                                                                                                                                 |
+    |                                                                                                                                                 |
+    |                                                                                                                                                 |
+    |                                                                                                                                                 |
+    |                                                                                                                                                 |
+    |                                                                                                                                                 |
+    |_________________________________________________________________________________________________________________________________________________|
+  
+  </pre>
+  </p>
+</div>
+  
+  </body>
+</html>

@@ -1,0 +1,25 @@
+
+root {
+    display: block;
+}
+#bluething{
+    margin:0 auto;
+    width:490px;
+    padding: 10px;
+    border: 5px solid;
+    -webkit-border-radius: 30px;
+}
+
+body{
+    background-color:grey;
+}
+#mainText{
+    margin:0 auto;
+    width:60%;
+    padding: 10px;
+    border: 5px solid;
+    -webkit-border-radius: 30px;
+    position:absolute;
+    top:30%;
+    right:18%;
+}

@@ -1,0 +1,48 @@
+#box1{
+    text-align:center;
+    margin:0 auto;
+    width:450px;
+    border: 10px white solid;
+    -webkit-border-radius: 10px;
+}
+#blueThing{
+    margin:0 auto;
+    width:490px;
+    padding: 10px;
+    border: 5px  solid;
+    -webkit-border-radius: 30px;
+}
+
+#cpu{
+    width:250px;
+    border: 3px solid;
+    -webkit-border-radius: 10px;
+}
+#motherboard{
+    width:250px;
+    border: 3px solid;
+    -webkit-border-radius: 10px;
+}
+#ram{
+    width:250px;
+    border: 3px solid;
+    -webkit-border-radius: 10px;
+}
+#hardDrive{
+    width:250px;
+    border: 3px solid;
+    -webkit-border-radius: 10px;
+}
+#power{
+    width:250px;
+    border: 3px solid;
+    -webkit-border-radius: 10px;
+}
+
+#kmm{
+    width:250;
+    border: 3px solid;
+    -webkit-border-radius: 10px;
+}
+
+

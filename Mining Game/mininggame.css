@@ -1,0 +1,156 @@
+
+
+#ironimg{
+  position:absolute;
+    width:110px;
+    height:110px;
+    top:10%;
+    right:900px;
+}
+#ironCount{
+  position:absolute;
+   right:950px;
+   top:35px;
+}
+#goldimg{
+  position:absolute;
+    width:110px;
+    height:110px;
+    top:35%;
+    right:900px;
+}
+#goldCount{
+   position:absolute;
+   top:30%;
+   right:950px;
+}
+#diamondimg{
+  position:absolute;
+   width:125px;
+   height:200px;
+   top:35%; 
+   right:685px;
+}
+#diamondCount{
+   position:absolute;
+   top:29%;
+   right:715px;   
+} 
+#rubyimg{
+  position:absolute; 
+   width:90px; 
+   height:90px; 
+   top:12%;
+   right:700px;
+}
+#rubyCount{
+   position:absolute; 
+   top:5%; 
+   right:720px;
+}
+#rock{
+  position:absolute;
+   width:110px;
+   height:110px;
+   top:10%
+}
+#moneyDisplay{
+  position:absolute;
+  top:20px;
+}
+
+#moneyDisplayTrade{
+  position:absolute;
+  top:20px;
+  right:730px;
+}
+
+#upgradeimg{
+  position:absolute;
+  width:160px; 
+  height:160px;
+  top:240px;
+  right:1150px;  
+  
+}
+#upgradeWords{
+  position:absolute;
+  top:185px;
+  right:1160px;
+}
+#lackOfMoney{
+  position:absolute;
+  top:316px;
+  right:10px;
+}
+#upgrade2img{
+  position:absolute;
+  width:100px;
+  top:420px;
+  right:1230px;
+}
+#upgrade2Words{
+  position:absolute; 
+  top:520px;
+  right:1210px;
+}
+#upgrade3img{
+  position:absolute;
+  width:100px;
+  top:470px;
+  right:1090px;
+}
+
+#upgrade3Words{
+  position:absolute;
+  width:100px;
+  top:400px;
+  right:1070px;
+}
+#oilCount{
+  position:absolute;
+  right:140px;
+}
+#oilimg{
+  position:absolute;
+  width:70px;
+  height:120px;
+  right:90px;
+  top:90px;
+}
+#page2button{
+  position:absolute;
+  top:520px;
+  right:1150px;
+}
+#page2img{
+  position:absolute;
+  top:-100px;
+  right:-500px;
+  width:200px;
+  height:150px;
+}
+
+#furnaceimg{
+  position:absolute;
+  top:420px;
+  right:900px;
+}
+#furnacedropdown{
+  position:absolute;
+  top:520px;
+  right:900px;
+}
+#furncountselect{
+  position:absolute;
+  top:540px;
+  right:900px;
+}
+#smeltingbutton{
+  position:absolute;
+  top:560px;
+  right:900px;
+}
+
+
+
