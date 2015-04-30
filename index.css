@@ -1,0 +1,33 @@
+body {
+    font-family: Garamond;
+}
+#box1{
+    text-align:center;
+    margin:0 auto;
+    width:450px;
+    border: 10px white solid;
+    -webkit-border-radius: 10px;
+}
+#bluething{
+    margin:0 auto;
+    width:490px;
+    padding: 10px;
+    border: 5px  solid;
+    -webkit-border-radius: 30px;
+}
+a{
+    text-decoration: none;
+    color: #00628B
+}
+#work{
+    color:white;
+}
+
+#backpage{
+    width:1400px;
+    position:absolute;
+    bottom: -200px;
+}
+#swagCat{
+    width:162px;
+}
